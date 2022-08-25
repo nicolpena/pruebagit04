@@ -1,0 +1,13 @@
+h1,h2{
+    color: rgb(214, 127, 255);
+    background-color: blanchedalmond;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+body{
+    color: rgb(214, 127, 255);
+}
