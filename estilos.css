@@ -11,3 +11,14 @@ h1,h2{
 body{
     color: rgb(214, 127, 255);
 }
+#t4{
+    color: greenyellow;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+.estilo1{
+    color: indigo;
+    font-style: italic;
+    font-size: 25px;
+}
