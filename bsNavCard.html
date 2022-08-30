@@ -11,12 +11,69 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <ul>
-                <li>
-                    
+            <ul class="navbar nav">
+                <li class="nav-item">
+                    <a href="bsLogin.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bsTablas.html" class = "nav-link"> Tabla </a>
+                </li>
+                <li class="nav-item">
+                    <a href="bsGrilla.html" class="nav-link">Grilla</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> No bootstrap
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="formulario.html">Formulario</a></li>
+                        <li><a class="dropdown-item" href="HolaMundo.html">Hola Mundo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="htmlestilo.html">Estilo</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
     </div>
+
+    <div class="container">
+        <h1>Cards en Bootstrap</h1>
+        <p>Son como unas tarjeticas. Para ellos yo debo tener imágenes</p>
+        <div class="row">
+            <div class="col-md">
+                <div class="card text-center bg-info">
+                    <img src="img/OSXDCD0.jpg" alt="portatil" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Portatil de alta gama</h4>
+                        <p class="card-text">Portatil de disco duro ssd 1 tera, con memoria RAM de 32 GB, con Windows 11</p>
+                        <a href="#" class="btn btn-primary">Entrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-center bg-warning">
+                    <img src="img/2385.jpg" alt="celular" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Iphone</h4>
+                        <p class="card-text">Portatil de disco duro ssd 1 tera, con memoria RAM de 32 GB, con Windows 11</p>
+                        <a href="#" class="btn btn-primary">Entrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-center bg-light">
+                    <img src="img/rpa-concept-with-blurry-hand-touching-screen.jpg" alt="tecnologia" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Tecnologia</h4>
+                        <p class="card-text">Portatil de disco duro ssd 1 tera, con memoria RAM de 32 GB, con Windows 11</p>
+                        <a href="#" class="btn btn-primary">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
