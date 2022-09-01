@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form action="" id="formulario">
             <div class="mb-3 mt-5"> <!--mb es margin bottom, mt es margin top-->
                 <label for="nombre" class="form-label">Ingrese Usuario:</label>
                 <input type="text" id="nombre" name="nombre" class="form-control"> <br>
@@ -20,12 +20,34 @@
                 <input type="password" id="clave" name="clave" class="form-control"> <br>
             </div>
             <div class="mb-3">
-                <button type="submit" class="btn btn-primary" onclick="verificar()">Aceptar</button>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
             </div>
         </form>
-        <!--Para programar en javascript debo hacer un script-->
-        <script src= "jsLogin.js"></script>
+
+        <!--Para programar en javascript toca hacer un script-->
+        <!--Antes de un sript debo poner la línea de la libreria del query... accedo a ella con un $-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script>
+            let x = $(document) //llamo a la función, referencio el documento al que quiero acceder
+            x.ready(iniciarEventos) //se ejecuta cuando todos los elementos de la página esten cargados
+            function iniciarEventos(){
+                let x = $("#formulario") //para llamar al id de un objeto se pone el #
+                x.submit(verificar) 
+            }
+            const user = "nicolpena"
+            const pw = 1234
+            function verificar(){
+                let usuario = document.getElementById("nombre").value
+                let clave = document.getElementById("clave").value
+                if(usuario == user && clave == pw){
+                    window.alert("Login existoso")
+                }else{
+                    alert("Verifique los datos ingresados")
+                }
+            }
         </script>
+
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </div>
